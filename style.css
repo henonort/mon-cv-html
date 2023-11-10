@@ -1,44 +1,93 @@
 body {
+    padding: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    padding: 10%;
-    background-color: #ffffff;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1, h2 {
-    font-weight: 600=0;
-    color: #e63946;
-    text-align: center;  
+main {
+    background-color: #fff;
 }
 
-h3 {
-    color:#d62828;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-
-a {
-    color: #d62828;
+header h1 {
+    color: rgb(162, 9, 9); /* ma couleur préférée*/
 }
 
-img {
-    border-radius: 8%;
-    display: block;
-    margin:  auto
+header p {
+    color: rgb(239, 129, 129); /* scouleur secondaire saumon*/
+}
+
+h2 {
+    background-color: rgb(162, 9, 9);
+    color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+h3 {
+    color: rgb(239, 129, 129);
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    color: rgb(162, 9, 9);
+}
+
+footer {
+text-align: center;
+
 }
 
 p {
     text-align: center;
+    margin: 10px 0;
 }
 
 
-ul {
-    list-style-type: none ;
-    text-align: center;
-} 
-header, footer {
-    text-align: center;
-    padding: 2rem;
+@keyframes backgroundFade {
+    from { background-color: #fff; }
+    to { background-color: #e0e0e0; }
+}
+
+.profil,
+.experiences,
+.formation,
+.techniques,
+.relationnelles,
+.activites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.profil:hover,
+.experiences:hover,
+.formation:hover,
+.techniques:hover,
+.relationnelles:hover,
+.activites:hover {
+    animation-name: backgroundFade;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
