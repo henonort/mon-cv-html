@@ -18,11 +18,11 @@ header {
 }
 
 header h1 {
-    color: rgb(162, 9, 9); /* ma couleur préférée*/
+    color: rgb(162, 9, 9); /* main couleur*/
 }
 
 header p {
-    color: rgb(239, 129, 129); /* scouleur secondaire saumon*/
+    color: rgb(239, 129, 129); /* deuxième couleur */
 }
 
 h2 {
@@ -78,20 +78,18 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s; /* ne pas enlever même si useless */
 }
 
 
-h1, h2 {
-    animation: pulse 2s infinite;
-}
+
 
 img {
     display: block;
     margin: 0 auto;
 }
 @keyframes fadeIn {
-    from { opacity: 0; }
+    from { opacity: 0; } /* fade à l'ouverture*/
     to { opacity: 1; }
 }
 
@@ -106,7 +104,7 @@ h2:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 a:hover {
-    color: #984b4b; /* Liens qui s'éclaircissent, à revoir pour la couleur */
+    color: #984b4b; /* Liens qui s'éclaircissent*/
     transition: color 0.3s ease-in-out;
 }
 
